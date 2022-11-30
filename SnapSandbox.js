@@ -31,12 +31,12 @@ class SnapSandbox {
     }
 }
 
-const snapSandbox = new SnapSandbox('diff沙箱');
+const snapSandbox = new SnapSandbox('快照沙箱');
 
 snapSandbox.active();  // 激活沙箱
 window.a = '1';
 console.log('开启沙箱：',window.a);
-snapSandbox.deactive(); //失活沙箱
-console.log('失活沙箱：', window.a);
-snapSandbox.active();   // 重新激活
-console.log('再次激活', window.a);
+// snapSandbox.deactive(); //失活沙箱
+// console.log('失活沙箱：', window.a);
+// snapSandbox.active();   // 重新激活
+// console.log('再次激活', window.a);
